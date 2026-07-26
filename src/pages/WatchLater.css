@@ -1,0 +1,32 @@
+.watch-later-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.watch-later-content h1 {
+  margin-bottom: 20px;
+}
+
+.watch-later-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--color-muted);
+}
+
+.watch-later-browse-link {
+  display: inline-block;
+  margin-top: 16px;
+  background-color: var(--color-accent);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+}

@@ -1,0 +1,94 @@
+.carousel-section {
+  margin-bottom: 36px;
+}
+
+.carousel-title {
+  font-size: 18px;
+  margin: 0 0 12px 32px;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  padding: 0 32px;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.carousel-track:hover,
+.carousel-track:focus-within {
+  animation-play-state: paused;
+}
+
+.carousel-track-left {
+  animation-name: scroll-left;
+}
+
+.carousel-track-right {
+  animation-name: scroll-right;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.carousel-item {
+  position: relative;
+  flex: 0 0 auto;
+  width: 160px;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+}
+
+.carousel-item-poster {
+  width: 160px;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-item-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 8px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+}
+
+.carousel-item-title {
+  margin: 0 0 2px 0;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carousel-item-meta {
+  margin: 0;
+  font-size: 11px;
+  color: #ddd;
+}

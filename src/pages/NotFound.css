@@ -1,0 +1,34 @@
+.not-found-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.not-found-code {
+  font-size: 80px;
+  margin: 0;
+  color: var(--color-accent);
+}
+
+.not-found-heading {
+  margin: 0 0 12px 0;
+}
+
+.not-found-text {
+  color: var(--color-muted);
+  max-width: 380px;
+  margin-bottom: 24px;
+}
+
+.not-found-link {
+  background-color: var(--color-accent);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 4px;
+  font-size: 14px;
+}
